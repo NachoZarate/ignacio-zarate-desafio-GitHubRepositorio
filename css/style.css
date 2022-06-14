@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padreGrid1 div, .padreGrid2 div{
+    background-color: darkolivegreen;
+    border: solid 2px black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.padreGrid1{
+    display: grid;
+    grid-template-columns: 150px 250px;
+    grid-template-rows: 150px 100px;
+    height: 550px;
+    justify-content: center;
+    align-content: flex-start;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+}
+
+.padreGrid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px;
+    align-items: center;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "nav header header header"
+    "nav section1 section1 aside"
+    "nav section2 section2 aside"
+    "nav footer footer footer"
+    ;
+    grid-template-rows: repeat(4, 25%);
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rosybrown;
+}
+
+.header{
+    grid-area: header;
+    background-color: blanchedalmond;
+    background-image: url('https://bluefunkymamma.files.wordpress.com/2018/08/instrumentos-musicales.jpg');
+}
+
+.section1{
+    grid-area: section1;
+    background-color: burlywood;
+}
+
+.section2{
+    grid-area: section2;
+    background-color: chocolate;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: blue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+@media (max-width: 768px) {
+    .grilla{
+    grid-template-areas:
+    "header header header header"
+    "nav section1 section1 aside"
+    "nav section2 section2 aside"
+    "footer footer footer footer"
+    ;
+    }
+    .header{
+        align-items: center;
+    }
+}
