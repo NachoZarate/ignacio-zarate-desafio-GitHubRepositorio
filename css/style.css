@@ -54,11 +54,13 @@
 .section1{
     grid-area: section1;
     background-color: burlywood;
+    background-image: linear-gradient(to bottom, blue, red);
 }
 
 .section2{
     grid-area: section2;
     background-color: chocolate;
+    background-image: linear-gradient(to left, green, violet);
 }
 
 .aside{
