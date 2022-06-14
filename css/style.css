@@ -27,6 +27,7 @@
     grid-template-columns: auto auto;
     grid-template-rows: 100px 100px;
     align-items: center;
+    transform: skewY(-10deg);
 }
 
 .grilla{
@@ -55,6 +56,7 @@
     grid-area: section1;
     background-color: burlywood;
     background-image: linear-gradient(to bottom, blue, red);
+
 }
 
 .section2{
